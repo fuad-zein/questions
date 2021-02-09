@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 - Json Manipulation</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+</head>
+
+<body class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" onclick="onImgClick('./images/q1.png')" src="./images/q1.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Question 1</h5>
+                        <h6>(click image for detailed picture)</h6>
+<p  class="card-text">Users who don't have phone number.</p>
+                        <button  class="btn btn-primary" onclick="lihatHasil('q1')">Lihat Hasilnya</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="col-sm-4">
+            <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" onclick="onImgClick('./images/q2.png')" src="./images/q2.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Question 2</h5>
+                        <h6>(click image for detailed picture)</h6>
+<p  class="card-text">Find user who have articles.</p>
+                        <button  class="btn btn-primary" onclick="lihatHasil('q2')">Lihat Hasilnya</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="col-sm-4">
+            <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" onclick="onImgClick('./images/q3.png')" src="./images/q3.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Question 3</h5>
+                        <h6>(click image for detailed picture)</h6>
+<p  class="card-text">Find user who have "annis" in their name.</p>
+                        <button  class="btn btn-primary" onclick="lihatHasil('q3')">Lihat Hasilnya</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="col-sm-4">
+            <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img onclick="onImgClick('./images/q4.png')" class="card-img-top" src="./images/q4.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Question 4</h5>
+                        <h6>(click image for detailed picture)</h6>
+<p  class="card-text">Find users who have articles on the year 2020.</p>
+                        <button  class="btn btn-primary" onclick="lihatHasil('q4')">Lihat Hasilnya</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="col-sm-4">
+            <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" onclick="onImgClick('./images/q5.png')" src="./images/q5.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Question 5</h5>
+                        <h6>(click image for detailed picture)</h6>
+<p  class="card-text">Find users who are born in 1986.</p>
+                        <button  class="btn btn-primary" onclick="lihatHasil('q5')">Lihat Hasilnya</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="col-sm-4">
+            <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" onclick="onImgClick('./images/q6.png')" src="./images/q6.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Question 6</h5>
+                        <h6>(click image for detailed picture)</h6>
+<p  class="card-text">Find articles that contain "tips" on the title.</p>
+                        <button  class="btn btn-primary" onclick="lihatHasil('q6')">Lihat Hasilnya</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="col-sm-12">
+            <div class="d-flex justify-content-center">
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" onclick="onImgClick('./images/q7.png')" src="./images/q7.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Question 7</h5>
+                            <h6>(click image for detailed picture)</h6>
+<p  class="card-text">Find articles published before August 2019.</p>
+                            <button  class="btn btn-primary" onclick="lihatHasil('q7')">Lihat Hasilnya</button>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle" >Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="white-space: pre-line" id="modalBody">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalImg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleimg" >Detail Image</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="white-space: pre-line" >
+                <img id="modalBodyimg" src="" style="width: 100%;height: 100%;" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+      <script src="index.js"></script>
+</body>
+
+</html>
