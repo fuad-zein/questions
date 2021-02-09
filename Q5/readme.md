@@ -17,7 +17,7 @@
 
 <br>
 
-![QR Code Expo Release](https://github.com/hikaaam/questions/tree/main/Q5/assets/release.png)
+![QR Code Expo Release](https://raw.githubusercontent.com/hikaaam/questions/main/Q5/assets/images/release.png)
 
 <br>
 
